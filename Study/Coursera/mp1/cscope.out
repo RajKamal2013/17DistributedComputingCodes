@@ -1,0 +1,5567 @@
+cscope 15 /Users/rajkamal/Documents/work/CloudComputing/Coursera/mp1 -q 0000000302 0000028281
+	@Application.cpp
+
+7 
+	~"Aµliˇti⁄.h
+"
+
+9 
+	$h™dÀr
+(
+sig
+) {
+
+10 *
+¨øy
+[10];
+
+11 
+size_t
+ 
+size
+;
+
+14 
+size
+ = 
+	`backåa˚
+(
+¨øy
+, 10);
+
+17 
+	`Ârötf
+(
+°dîr
+, "Eº‹: sig«»%d:\n", 
+sig
+);
+
+18 
+	`backåa˚_symbﬁs_fd
+(
+¨øy
+, 
+size
+, 
+STDERR_FILENO
+);
+
+19 
+	`exô
+(1);
+
+20 
+	}
+}
+
+27 
+	$maö
+(
+¨gc
+, *
+¨gv
+[]) {
+
+29 i‡–
+¨gc
+ !
+ARGS_COUNT
+ ) {
+
+30 
+cout
+<<"C⁄figuøti⁄ (i.e., *.c⁄fËfûêFûêRequúed"<<
+ídl
+;
+
+31  
+FAILURE
+;
+
+35 
+Aµliˇti⁄
+ *
+≠p
+ = 
+√w
+ 
+	`Aµliˇti⁄
+(
+¨gv
+[1]);
+
+37 
+≠p
+->
+	`run
+();
+
+39 
+	`dñëe
+(
+≠p
+);
+
+41  
+SUCCESS
+;
+
+42 
+	}
+}
+
+47 
+	gAµliˇti⁄
+::
+	$Aµliˇti⁄
+(*
+öfûe
+) {
+
+48 
+i
+;
+
+49 
+∑r
+ = 
+√w
+ 
+	`P¨ams
+();
+
+50 
+	`§™d
+ (
+	`time
+(
+NULL
+));
+
+51 
+∑r
+->
+	`£ç¨ams
+(
+öfûe
+);
+
+52 
+log
+ = 
+√w
+ 
+	`Log
+(
+∑r
+);
+
+53 
+í
+ = 
+√w
+ 
+	`EmulNë
+(
+∑r
+);
+
+54 
+mp1
+ = (
+MP1Node
+ **Ë
+	`mÆloc
+(
+∑r
+->
+EN_GPSZ
+ * (MP1Node *));
+
+59  
+i
+ = 0; i < 
+∑r
+->
+EN_GPSZ
+; i++ ) {
+
+60 
+Membî
+ *
+membîNode
+ = 
+√w
+ Member;
+
+61 
+membîNode
+->
+öôed
+ = 
+Ál£
+;
+
+62 
+Addªss
+ *
+addªssOfMembîNode
+ = 
+√w
+ 
+	`Addªss
+();
+
+63 
+Addªss
+ 
+joöaddr
+;
+
+64 
+joöaddr
+ = 
+	`gëjoöaddr
+();
+
+65 
+addªssOfMembîNode
+ = (
+Addªss
+ *Ë
+í
+->
+	`ENöô
+◊ddªssOfMembîNode, 
+∑r
+->
+PORTNUM
+);
+
+66 
+mp1
+[
+i
+] = 
+√w
+ 
+	`MP1Node
+(
+membîNode
+, 
+∑r
+, 
+í
+, 
+log
+, 
+addªssOfMembîNode
+);
+
+67 
+log
+->
+	`LOG
+(&(
+mp1
+[
+i
+]->
+	`gëMembîNode
+()->
+addr
+), "APP");
+
+68 
+dñëe
+ 
+addªssOfMembîNode
+;
+
+70 
+	}
+}
+
+75 
+	gAµliˇti⁄
+::~
+	$Aµliˇti⁄
+() {
+
+76 
+dñëe
+ 
+log
+;
+
+77 
+dñëe
+ 
+í
+;
+
+78  
+i
+ = 0; i < 
+∑r
+->
+EN_GPSZ
+; i++ ) {
+
+79 
+dñëe
+ 
+mp1
+[
+i
+];
+
+81 
+	`‰ì
+(
+mp1
+);
+
+82 
+dñëe
+ 
+∑r
+;
+
+83 
+	}
+}
+
+90 
+	gAµliˇti⁄
+::
+	$run
+()
+
+92 
+i
+;
+
+93 
+timeWhíAŒNodesHaveJoöed
+ = 0;
+
+95 
+boﬁ
+ 
+ÆlNodesJoöed
+ = 
+Ál£
+;
+
+96 
+	`§™d
+(
+	`time
+(
+NULL
+));
+
+99  
+∑r
+->
+globÆtime
+ = 0;Ö¨->globÆtimê< 
+TOTAL_RUNNING_TIME
+; ++par->globaltime ) {
+
+101 
+	`mp1Run
+();
+
+103 
+	`Áû
+();
+
+107 
+í
+->
+	`EN˛ónup
+();
+
+109 
+i
+=0;i<=
+∑r
+->
+EN_GPSZ
+-1;i++) {
+
+110 
+mp1
+[
+i
+]->
+	`föishUpThisNode
+();
+
+113  
+SUCCESS
+;
+
+114 
+	}
+}
+
+121 
+	gAµliˇti⁄
+::
+	$mp1Run
+() {
+
+122 
+i
+;
+
+125  
+i
+ = 0; i <
+∑r
+->
+EN_GPSZ
+-1; i++) {
+
+130 if–
+∑r
+->
+	`gëcuºtime
+(Ë> ()’¨->
+STEP_RATE
+*
+i
+Ë&& !(
+mp1
+[i]->
+	`gëMembîNode
+()->
+bFaûed
+) ) {
+
+132 
+mp1
+[
+i
+]->
+	`ªcvLo›
+();
+
+138  
+i
+ = 
+∑r
+->
+EN_GPSZ
+ - 1; i >= 0; i-- ) {
+
+143 if–
+∑r
+->
+	`gëcuºtime
+(Ë=()’¨->
+STEP_RATE
+*
+i
+) ) {
+
+145 
+mp1
+[
+i
+]->
+	`nodeSèπ
+(
+JOINADDR
+, 
+∑r
+->
+PORTNUM
+);
+
+146 
+cout
+<<
+i
+<<"-th i¡rodu˚dÇodêi†assig√d wôhÅhêaddªss: "<<
+mp1
+[i]->
+	`gëMembîNode
+()->
+addr
+.
+	`gëAddªss
+(Ë<< 
+ídl
+;
+
+147 
+nodeCou¡
+ +
+i
+;
+
+153 if–
+∑r
+->
+	`gëcuºtime
+(Ë> ()’¨->
+STEP_RATE
+*
+i
+Ë&& !(
+mp1
+[i]->
+	`gëMembîNode
+()->
+bFaûed
+) ) {
+
+155 
+mp1
+[
+i
+]->
+	`nodeLo›
+();
+
+156 #ifde‡
+DEBUGLOG
+
+
+157 if–(
+i
+ =0Ë&& (
+∑r
+->
+globÆtime
+ % 500 == 0) ) {
+
+158 
+log
+->
+	`LOG
+(&
+mp1
+[
+i
+]->
+	`gëMembîNode
+()->
+addr
+, "@@time=%d", 
+∑r
+->
+	`gëcuºtime
+());
+
+164 
+	}
+}
+
+173 
+	gAµliˇti⁄
+::
+	$Áû
+() {
+
+174 
+i
+, 
+ªmoved
+;
+
+177 if–
+∑r
+->
+DROP_MSG
+ &&Ö¨->
+	`gëcuºtime
+() == 50 ) {
+
+178 
+∑r
+->
+dr›msg
+ = 1;
+
+181 if–
+∑r
+->
+SINGLE_FAILURE
+ &&Ö¨->
+	`gëcuºtime
+() == 100 ) {
+
+182 
+ªmoved
+ = (
+	`ønd
+(Ë% 
+∑r
+->
+EN_GPSZ
+);
+
+183 #ifde‡
+DEBUGLOG
+
+
+184 
+log
+->
+	`LOG
+(&
+mp1
+[
+ªmoved
+]->
+	`gëMembîNode
+()->
+addr
+, "NodêÁûedáàtime=%d", 
+∑r
+->
+	`gëcuºtime
+());
+
+186 
+mp1
+[
+ªmoved
+]->
+	`gëMembîNode
+()->
+bFaûed
+ = 
+åue
+;
+
+188 if–
+∑r
+->
+	`gëcuºtime
+() == 100 ) {
+
+189 
+ªmoved
+ = 
+	`ønd
+(Ë% 
+∑r
+->
+EN_GPSZ
+/2;
+
+190  
+i
+ = 
+ªmoved
+; i <Ñemoved + 
+∑r
+->
+EN_GPSZ
+/2; i++ ) {
+
+191 #ifde‡
+DEBUGLOG
+
+
+192 
+log
+->
+	`LOG
+(&
+mp1
+[
+i
+]->
+	`gëMembîNode
+()->
+addr
+, "NodêÁûedáàtimê%d", 
+∑r
+->
+	`gëcuºtime
+());
+
+194 
+mp1
+[
+i
+]->
+	`gëMembîNode
+()->
+bFaûed
+ = 
+åue
+;
+
+198 if–
+∑r
+->
+DROP_MSG
+ &&Ö¨->
+	`gëcuºtime
+() == 300) {
+
+199 
+∑r
+->
+dr›msg
+=0;
+
+202 
+	}
+}
+
+209 
+Addªss
+ 
+	gAµliˇti⁄
+::
+	$gëjoöaddr
+(){
+
+211 
+Addªss
+ 
+joöaddr
+;
+
+212 
+joöaddr
+.
+	`öô
+();
+
+213 *(*)(&(
+joöaddr
+.
+addr
+))=1;
+
+214 *(*)(&(
+joöaddr
+.
+addr
+[4]))=0;
+
+216  
+joöaddr
+;
+
+217 
+	}
+}
+
+	@Application.h
+
+7 #i‚de‡
+_APPLICATION_H_
+
+
+8 
+	#_APPLICATION_H_
+
+
+	)
+
+10 
+	~"°dö˛udes.h
+"
+
+11 
+	~"MP1Node.h
+"
+
+12 
+	~"Log.h
+"
+
+13 
+	~"P¨ams.h
+"
+
+14 
+	~"Membî.h
+"
+
+15 
+	~"EmulNë.h
+"
+
+16 
+	~"Queue.h
+"
+
+21 
+	gnodeCou¡
+ = 0;
+
+26 
+	#ARGS_COUNT
+ 2
+
+	)
+
+27 
+	#TOTAL_RUNNING_TIME
+ 700
+
+	)
+
+34 ˛as†
+	cAµliˇti⁄
+{
+
+35 
+	m¥iv©e
+:
+
+38 
+JOINADDR
+[30];
+
+39 
+EmulNë
+ *
+	mí
+;
+
+40 
+Log
+ *
+	mlog
+;
+
+41 
+MP1Node
+ **
+	mmp1
+;
+
+42 
+P¨ams
+ *
+	m∑r
+;
+
+43 
+	mpublic
+:
+
+44 
+Aµliˇti⁄
+(*);
+
+45 
+	mvútuÆ
+ ~
+Aµliˇti⁄
+();
+
+46 
+Addªss
+ 
+gëjoöaddr
+();
+
+47 
+run
+();
+
+48 
+mp1Run
+();
+
+49 
+Áû
+();
+
+	@EmulNet.cpp
+
+7 
+	~"EmulNë.h
+"
+
+12 
+	gEmulNë
+::
+	$EmulNë
+(
+P¨ams
+ *
+p
+)
+
+15 
+i
+,
+j
+;
+
+16 
+∑r
+ = 
+p
+;
+
+17 
+emu ë
+.
+	`£tNextId
+(1);
+
+18 
+emu ë
+.
+	`£âCuºBuffSize
+(0);
+
+19 
+íInôed
+=0;
+
+20  
+i
+ = 0; i < 
+MAX_NODES
+; i++ ) {
+
+21  
+j
+ = 0; j < 
+MAX_TIME
+; j++ ) {
+
+22 
+£¡_msgs
+[
+i
+][
+j
+] = 0;
+
+23 
+ªcv_msgs
+[
+i
+][
+j
+] = 0;
+
+27 
+	}
+}
+
+32 
+	gEmulNë
+::
+	$EmulNë
+(
+EmulNë
+ &
+™ŸhîEmulNë
+) {
+
+33 
+i
+, 
+j
+;
+
+34 
+this
+->
+∑r
+ = 
+™ŸhîEmulNë
+.par;
+
+35 
+this
+->
+íInôed
+ = 
+™ŸhîEmulNë
+.enInited;
+
+36  
+i
+ = 0; i < 
+MAX_NODES
+; i++ ) {
+
+37  
+j
+ = 0; j < 
+MAX_TIME
+; j++ ) {
+
+38 
+this
+->
+£¡_msgs
+[
+i
+][
+j
+] = 
+™ŸhîEmulNë
+.sent_msgs[i][j];
+
+39 
+this
+->
+ªcv_msgs
+[
+i
+][
+j
+] = 
+™ŸhîEmulNë
+.recv_msgs[i][j];
+
+42 
+this
+->
+emu ë
+ = 
+™ŸhîEmulNë
+.emulnet;
+
+43 
+	}
+}
+
+48 
+	gEmulNë
+& EmulNë::
+›î©‹
+ =(
+EmulNë
+ &
+™ŸhîEmulNë
+) {
+
+49 
+i
+, 
+j
+;
+
+50 
+	gthis
+->
+	g∑r
+ = 
+™ŸhîEmulNë
+.
+∑r
+;
+
+51 
+	gthis
+->
+	gíInôed
+ = 
+™ŸhîEmulNë
+.
+íInôed
+;
+
+52  
+	gi
+ = 0; i < 
+	gMAX_NODES
+; i++ ) {
+
+53  
+	gj
+ = 0; j < 
+	gMAX_TIME
+; j++ ) {
+
+54 
+	gthis
+->
+	g£¡_msgs
+[
+i
+][
+j
+] = 
+™ŸhîEmulNë
+.
+£¡_msgs
+[i][j];
+
+55 
+	gthis
+->
+	gªcv_msgs
+[
+i
+][
+j
+] = 
+™ŸhîEmulNë
+.
+ªcv_msgs
+[i][j];
+
+58 
+	gthis
+->
+	gemu ë
+ = 
+™ŸhîEmulNë
+.
+emu ë
+;
+
+59  *
+	gthis
+;
+
+65 
+	gEmulNë
+::~
+	$EmulNë
+(Ë{
+	}
+}
+
+72 *
+EmulNë
+::
+	$ENöô
+(
+Addªss
+ *
+myaddr
+, 
+p‹t
+) {
+
+74 *(*)(
+myaddr
+->
+addr
+Ë
+emu ë
+.
+√xtid
+++;
+
+75 *(*)(&
+myaddr
+->
+addr
+[4]) = 0;
+
+76  
+myaddr
+;
+
+77 
+	}
+}
+
+87 
+	gEmulNë
+::
+	$EN£nd
+(
+Addªss
+ *
+myaddr
+, Addªs†*
+tﬂddr
+, *
+d©a
+, 
+size
+) {
+
+88 
+í_msg
+ *
+em
+;
+
+89 
+ãmp
+[2048];
+
+90 
+£ndmsg
+ = 
+	`ønd
+() % 100;
+
+92 if–(
+emu ë
+.
+cuºbuffsize
+ >
+ENBUFFSIZE
+Ë|| (
+size
+ + ()(
+í_msg
+Ë>
+∑r
+->
+MAX_MSG_SIZE
+Ë|| (∑r->
+dr›msg
+ && 
+£ndmsg
+ < (Ë’¨->
+MSG_DROP_PROB
+ * 100)) ) {
+
+96 
+em
+ = (
+í_msg
+ *)
+	`mÆloc
+(”n_msgË+ 
+size
+);
+
+97 
+em
+->
+size
+ = size;
+
+99 
+	`mem˝y
+(&(
+em
+->
+‰om
+.
+addr
+), &(
+myaddr
+->addr), (em->from.addr));
+
+100 
+	`mem˝y
+(&(
+em
+->
+to
+.
+addr
+), &(
+tﬂddr
+->addr), ”m->
+‰om
+.addr));
+
+101 
+	`mem˝y
+(
+em
+ + 1, 
+d©a
+, 
+size
+);
+
+103 
+emu ë
+.
+buff
+[emu ë.
+cuºbuffsize
+++] = 
+em
+;
+
+105 
+§c
+ = *(*)(
+myaddr
+->
+addr
+);
+
+106 
+time
+ = 
+∑r
+->
+	`gëcuºtime
+();
+
+108 
+	`as£π
+(
+§c
+ <
+MAX_NODES
+);
+
+109 
+	`as£π
+(
+time
+ < 
+MAX_TIME
+);
+
+111 
+£¡_msgs
+[
+§c
+][
+time
+]++;
+
+113 #ifde‡
+DEBUGLOG
+
+
+114 
+	`•rötf
+(
+ãmp
+, "Sídög 4+%d B msgÅy≥ %dÅÿ%d.%d.%d.%d:%d ", 
+size
+-4, *(*)
+d©a
+, 
+tﬂddr
+->
+addr
+[0],Åoaddr->addr[1],Åoaddr->addr[2],Åoaddr->addr[3], *(*)&toaddr->addr[4]);
+
+117  
+size
+;
+
+118 
+	}
+}
+
+128 
+	gEmulNë
+::
+	$EN£nd
+(
+Addªss
+ *
+myaddr
+, Addªs†*
+tﬂddr
+, 
+°rög
+ 
+d©a
+) {
+
+129 * 
+°r
+ = (*Ë
+	`mÆloc
+(
+d©a
+.
+	`Àngth
+() * ());
+
+130 
+	`mem˝y
+(
+°r
+, 
+d©a
+.
+	`c_°r
+(), d©a.
+	`size
+());
+
+131 
+ªt
+ = 
+this
+->
+	`EN£nd
+(
+myaddr
+, 
+tﬂddr
+, 
+°r
+, (
+d©a
+.
+	`Àngth
+() * ()));
+
+132 
+	`‰ì
+(
+°r
+);
+
+133  
+ªt
+;
+
+134 
+	}
+}
+
+144 
+	gEmulNë
+::
+ENªcv
+(
+Addªss
+ *
+myaddr
+, (* 
+íq
+)(*, *, ), 
+timevÆ
+ *
+t
+, 
+times
+, *
+queue
+){
+
+146 
+i
+;
+
+147 * 
+tmp
+;
+
+148 
+sz
+;
+
+149 
+í_msg
+ *
+emsg
+;
+
+151  
+i
+ = 
+emu ë
+.
+cuºbuffsize
+ - 1; i >= 0; i-- ) {
+
+152 
+emsg
+ = 
+emu ë
+.
+buff
+[
+i
+];
+
+154 i‡–0 =
+	`°rcmp
+(
+emsg
+->
+to
+.
+addr
+, 
+myaddr
+->addr) ) {
+
+155 
+sz
+ = 
+emsg
+->
+size
+;
+
+156 
+tmp
+ = (*Ë
+	`mÆloc
+(
+sz
+ * ());
+
+157 
+	`mem˝y
+(
+tmp
+, (*)(
+emsg
++1), 
+sz
+);
+
+159 
+emu ë
+.
+buff
+[
+i
+] =Ému ë.buff[emu ë.
+cuºbuffsize
+-1];
+
+160 
+emu ë
+.
+cuºbuffsize
+--;
+
+162 (*
+íq
+)(
+queue
+, (*)
+tmp
+, 
+sz
+);
+
+164 
+	`‰ì
+(
+emsg
+);
+
+166 
+d°
+ = *(*)(
+myaddr
+->
+addr
+);
+
+167 
+time
+ = 
+∑r
+->
+	`gëcuºtime
+();
+
+169 
+	`as£π
+(
+d°
+ <
+MAX_NODES
+);
+
+170 
+	`as£π
+(
+time
+ < 
+MAX_TIME
+);
+
+172 
+ªcv_msgs
+[
+d°
+][
+time
+]++;
+
+177 
+	}
+}
+
+184 
+	gEmulNë
+::
+	$EN˛ónup
+() {
+
+185 
+emu ë
+.
+√xtid
+=0;
+
+186 
+i
+, 
+j
+;
+
+187 
+£¡_tŸÆ
+, 
+ªcv_tŸÆ
+;
+
+189 
+FILE
+* 
+fûe
+ = 
+	`f›í
+("msgcount.log", "w+");
+
+191 
+emu ë
+.
+cuºbuffsize
+ > 0) {
+
+192 
+	`‰ì
+(
+emu ë
+.
+buff
+[--emu ë.
+cuºbuffsize
+]);
+
+195  
+i
+ = 1; i <
+∑r
+->
+EN_GPSZ
+; i++ ) {
+
+196 
+	`Ârötf
+(
+fûe
+, "nodê%3d ", 
+i
+);
+
+197 
+£¡_tŸÆ
+ = 0;
+
+198 
+ªcv_tŸÆ
+ = 0;
+
+200 
+j
+ = 0; j < 
+∑r
+->
+	`gëcuºtime
+(); j++) {
+
+202 
+£¡_tŸÆ
+ +
+£¡_msgs
+[
+i
+][
+j
+];
+
+203 
+ªcv_tŸÆ
+ +
+ªcv_msgs
+[
+i
+][
+j
+];
+
+204 i‡(
+i
+ != 67) {
+
+205 
+	`Ârötf
+(
+fûe
+, " (%4d, %4d)", 
+£¡_msgs
+[
+i
+][
+j
+], 
+ªcv_msgs
+[i][j]);
+
+206 i‡(
+j
+ % 10 == 9) {
+
+207 
+	`Ârötf
+(
+fûe
+, "\n ");
+
+211 
+	`Ârötf
+(
+fûe
+, "•ecü»%4d %4d %4d\n", 
+j
+, 
+£¡_msgs
+[
+i
+][j], 
+ªcv_msgs
+[i][j]);
+
+214 
+	`Ârötf
+(
+fûe
+, "\n");
+
+215 
+	`Ârötf
+(
+fûe
+, "nodê%3d sít_tŸÆ %6uÑecv_tŸÆ %6u\n\n", 
+i
+, 
+£¡_tŸÆ
+, 
+ªcv_tŸÆ
+);
+
+218 
+	`f˛o£
+(
+fûe
+);
+
+220 
+	}
+}
+
+	@EmulNet.h
+
+7 #i‚de‡
+_EMULNET_H_
+
+
+8 
+	#_EMULNET_H_
+
+
+	)
+
+10 
+	#MAX_NODES
+ 1000
+
+	)
+
+11 
+	#MAX_TIME
+ 3600
+
+	)
+
+12 
+	#ENBUFFSIZE
+ 30000
+
+	)
+
+14 
+	~"°dö˛udes.h
+"
+
+15 
+	~"P¨ams.h
+"
+
+16 
+	~"Membî.h
+"
+
+18 
+usög
+ 
+«me•a˚
+ 
+	g°d
+;
+
+23 
+	sí_msg
+ {
+
+25 
+	msize
+;
+
+27 
+Addªss
+ 
+	m‰om
+;
+
+29 
+Addªss
+ 
+	mto
+;
+
+30 }
+	tí_msg
+;
+
+35 ˛as†
+	cEM
+ {
+
+36 
+	mpublic
+:
+
+37 
+√xtid
+;
+
+38 
+	mcuºbuffsize
+;
+
+39 
+	mfú°ñtödex
+;
+
+40 
+í_msg
+* 
+	mbuff
+[
+ENBUFFSIZE
+];
+
+41 
+	$EM
+() {}
+
+42 
+EM
+& 
+›î©‹
+ = (EM &
+™ŸhîEM
+) {
+
+43 
+this
+->
+√xtid
+ = 
+™ŸhîEM
+.
+	`gëNextId
+();
+
+44 
+this
+->
+cuºbuffsize
+ = 
+™ŸhîEM
+.
+	`gëCuºBuffSize
+();
+
+45 
+this
+->
+fú°ñtödex
+ = 
+™ŸhîEM
+.
+	`gëFú°E…Index
+();
+
+46 
+i
+ = 
+this
+->
+cuºbuffsize
+;
+
+47 
+i
+ > 0) {
+
+48 
+this
+->
+buff
+[
+i
+] = 
+™ŸhîEM
+.buff[i];
+
+49 
+i
+--;
+
+51  *
+this
+;
+
+52 
+	}
+}
+
+53 
+	$gëNextId
+() {
+
+54  
+√xtid
+;
+
+55 
+	}
+}
+
+56 
+	$gëCuºBuffSize
+() {
+
+57  
+cuºbuffsize
+;
+
+58 
+	}
+}
+
+59 
+	$gëFú°E…Index
+() {
+
+60  
+fú°ñtödex
+;
+
+61 
+	}
+}
+
+62 
+	$£tNextId
+(
+√xtid
+) {
+
+63 
+this
+->
+√xtid
+ =Çextid;
+
+64 
+	}
+}
+
+65 
+	$£âCuºBuffSize
+(
+cuºbuffsize
+) {
+
+66 
+this
+->
+cuºbuffsize
+ = currbuffsize;
+
+67 
+	}
+}
+
+68 
+	$£tFú°E…Index
+(
+fú°ñtödex
+) {
+
+69 
+this
+->
+fú°ñtödex
+ = firsteltindex;
+
+70 
+	}
+}
+
+71 
+	gvútuÆ
+ ~
+	$EM
+(Ë{
+	}
+}
+
+79 ˛as†
+	cEmulNë
+
+
+81 
+	m¥iv©e
+:
+
+82 
+P¨ams
+* 
+∑r
+;
+
+83 
+	m£¡_msgs
+[
+MAX_NODES
+ + 1][
+MAX_TIME
+];
+
+84 
+	mªcv_msgs
+[
+MAX_NODES
+ + 1][
+MAX_TIME
+];
+
+85 
+	míInôed
+;
+
+86 
+EM
+ 
+	memu ë
+;
+
+87 
+	mpublic
+:
+
+88 
+EmulNë
+(
+P¨ams
+ *
+p
+);
+
+89 
+EmulNë
+(EmulNë &
+™ŸhîEmulNë
+);
+
+90 
+	mEmulNë
+& 
+	m›î©‹
+ = (
+EmulNë
+ &
+™ŸhîEmulNë
+);
+
+91 
+	mvútuÆ
+ ~
+EmulNë
+();
+
+92 *
+ENöô
+(
+Addªss
+ *
+myaddr
+, 
+p‹t
+);
+
+93 
+EN£nd
+(
+Addªss
+ *
+myaddr
+, Addªs†*
+tﬂddr
+, 
+°rög
+ 
+d©a
+);
+
+94 
+EN£nd
+(
+Addªss
+ *
+myaddr
+, Addªs†*
+tﬂddr
+, *
+d©a
+, 
+size
+);
+
+95 
+ENªcv
+(
+Addªss
+ *
+myaddr
+, (* 
+íq
+)(*, *, ), 
+timevÆ
+ *
+t
+, 
+times
+, *
+queue
+);
+
+96 
+	`EN˛ónup
+();
+
+	@Log.cpp
+
+7 
+	~"Log.h
+"
+
+12 
+	gLog
+::
+	$Log
+(
+P¨ams
+ *
+p
+) {
+
+13 
+∑r
+ = 
+p
+;
+
+14 
+fú°Time
+ = 
+Ál£
+;
+
+15 
+	}
+}
+
+20 
+	gLog
+::
+	$Log
+(c⁄° 
+Log
+ &
+™ŸhîLog
+) {
+
+21 
+this
+->
+∑r
+ = 
+™ŸhîLog
+.par;
+
+22 
+this
+->
+fú°Time
+ = 
+™ŸhîLog
+.firstTime;
+
+23 
+	}
+}
+
+28 
+	gLog
+& Log::
+›î©‹
+ = (c⁄° 
+Log
+& 
+™ŸhîLog
+) {
+
+29 
+this
+->
+∑r
+ = 
+™ŸhîLog
+.par;
+
+30 
+	gthis
+->
+	gfú°Time
+ = 
+™ŸhîLog
+.
+fú°Time
+;
+
+31  *
+	gthis
+;
+
+37 
+	gLog
+::~
+	$Log
+(Ë{
+	}
+}
+
+44 
+Log
+::
+	$LOG
+(
+Addªss
+ *
+addr
+, c⁄° * 
+°r
+, ...) {
+
+46 
+FILE
+ *
+Â
+;
+
+47 
+FILE
+ *
+Â2
+;
+
+48 
+va_li°
+ 
+v¨¨gli°
+;
+
+49 
+buf„r
+[30000];
+
+50 
+numwrôes
+;
+
+51 
+°d°rög
+[30];
+
+52 
+°d°rög2
+[40];
+
+53 
+°d°rög3
+[40];
+
+54 
+dbg_›íed
+=0;
+
+56 if(
+dbg_›íed
+ != 639){
+
+57 
+numwrôes
+=0;
+
+59 
+°d°rög2
+[0]=0;
+
+61 
+	`°r˝y
+(
+°d°rög3
+, 
+°d°rög2
+);
+
+63 
+	`°rˇt
+(
+°d°rög2
+, 
+DBG_LOG
+);
+
+64 
+	`°rˇt
+(
+°d°rög3
+, 
+STATS_LOG
+);
+
+66 
+Â
+ = 
+	`f›í
+(
+°d°rög2
+, "w");
+
+67 
+Â2
+ = 
+	`f›í
+(
+°d°rög3
+, "w");
+
+69 
+dbg_›íed
+=639;
+
+73 
+	`•rötf
+(
+°d°rög
+, "%d.%d.%d.%d:%d ", 
+addr
+->addr[0],áddr->addr[1],áddr->addr[2],áddr->addr[3], *(*)&addr->addr[4]);
+
+75 
+	`va_°¨t
+(
+v¨¨gli°
+, 
+°r
+);
+
+76 
+	`v•rötf
+(
+buf„r
+, 
+°r
+, 
+v¨¨gli°
+);
+
+77 
+	`va_íd
+(
+v¨¨gli°
+);
+
+79 i‡(!
+fú°Time
+) {
+
+80 
+magicNumbî
+ = 0;
+
+81 
+°rög
+ 
+magic
+ = 
+MAGIC_NUMBER
+;
+
+82 
+Àn
+ = 
+magic
+.
+	`Àngth
+();
+
+83  
+i
+ = 0; i < 
+Àn
+; i++ ) {
+
+84 
+magicNumbî
+ +()
+magic
+.
+	`©
+(
+i
+);
+
+86 
+	`Ârötf
+(
+Â
+, "%x\n", 
+magicNumbî
+);
+
+87 
+fú°Time
+ = 
+åue
+;
+
+90 if(
+	`memcmp
+(
+buf„r
+, "#STATSLOG#", 10)==0){
+
+91 
+	`Ârötf
+(
+Â2
+, "\¿%s", 
+°d°rög
+);
+
+92 
+	`Ârötf
+(
+Â2
+, "[%d] ", 
+∑r
+->
+	`gëcuºtime
+());
+
+94 
+	`Ârötf
+(
+Â2
+, 
+buf„r
+);
+
+97 
+	`Ârötf
+(
+Â
+, "\¿%s", 
+°d°rög
+);
+
+98 
+	`Ârötf
+(
+Â
+, "[%d] ", 
+∑r
+->
+	`gëcuºtime
+());
+
+99 
+	`Ârötf
+(
+Â
+, 
+buf„r
+);
+
+103 if(++
+numwrôes
+ >
+MAXWRITES
+){
+
+104 
+	`fÊush
+(
+Â
+);
+
+105 
+	`fÊush
+(
+Â2
+);
+
+106 
+numwrôes
+=0;
+
+109 
+	}
+}
+
+116 
+	gLog
+::
+	$logNodeAdd
+(
+Addªss
+ *
+thisNode
+, Addªs†*
+addedAddr
+) {
+
+117 
+°d°rög
+[100];
+
+118 
+	`•rötf
+(
+°d°rög
+, "Nodê%d.%d.%d.%d:%d joöedáàtimê%d", 
+addedAddr
+->
+addr
+[0],áddedAddr->addr[1],áddedAddr->addr[2],áddedAddr->addr[3], *(*)&addedAddr->addr[4], 
+∑r
+->
+	`gëcuºtime
+());
+
+119 
+	`LOG
+(
+thisNode
+, 
+°d°rög
+);
+
+120 
+	}
+}
+
+127 
+	gLog
+::
+	$logNodeRemove
+(
+Addªss
+ *
+thisNode
+, Addªs†*
+ªmovedAddr
+) {
+
+128 
+°d°rög
+[30];
+
+129 
+	`•rötf
+(
+°d°rög
+, "Nodê%d.%d.%d.%d:%dÑemovedáàtimê%d", 
+ªmovedAddr
+->
+addr
+[0],ÑemovedAddr->addr[1],ÑemovedAddr->addr[2],ÑemovedAddr->addr[3], *(*)&ªmovedAddr->addr[4], 
+∑r
+->
+	`gëcuºtime
+());
+
+130 
+	`LOG
+(
+thisNode
+, 
+°d°rög
+);
+
+131 
+	}
+}
+
+	@Log.h
+
+7 #i‚de‡
+_LOG_H_
+
+
+8 
+	#_LOG_H_
+
+
+	)
+
+10 
+	~"°dö˛udes.h
+"
+
+11 
+	~"P¨ams.h
+"
+
+12 
+	~"Membî.h
+"
+
+18 
+	#MAXWRITES
+ 1
+
+	)
+
+19 
+	#MAGIC_NUMBER
+ "CS425"
+
+	)
+
+20 
+	#DBG_LOG
+ "dbg.log"
+
+	)
+
+21 
+	#STATS_LOG
+ "°©s.log"
+
+	)
+
+28 ˛as†
+	cLog
+{
+
+29 
+	m¥iv©e
+:
+
+30 
+P¨ams
+ *
+∑r
+;
+
+31 
+boﬁ
+ 
+	mfú°Time
+;
+
+32 
+	mpublic
+:
+
+33 
+Log
+(
+P¨ams
+ *
+p
+);
+
+34 
+Log
+(c⁄° Log &
+™ŸhîLog
+);
+
+35 
+	mLog
+& 
+	m›î©‹
+ = (c⁄° 
+Log
+ &
+™ŸhîLog
+);
+
+36 
+	mvútuÆ
+ ~
+Log
+();
+
+37 
+LOG
+(
+Addªss
+ *, c⁄° * 
+°r
+, ...);
+
+38 
+logNodeAdd
+(
+Addªss
+ *, Address *);
+
+39 
+logNodeRemove
+(
+Addªss
+ *, Address *);
+
+	@MP1Node.cpp
+
+8 
+	~"MP1Node.h
+"
+
+19 
+	gMP1Node
+::
+	$MP1Node
+(
+Membî
+ *
+membî
+, 
+P¨ams
+ *
+∑øms
+, 
+EmulNë
+ *
+emul
+, 
+Log
+ *
+log
+, 
+Addªss
+ *
+addªss
+) {
+
+20  
+i
+ = 0; i < 6; i++ ) {
+
+21 
+NULLADDR
+[
+i
+] = 0;
+
+23 
+this
+->
+membîNode
+ = 
+membî
+;
+
+24 
+this
+->
+emulNë
+ = 
+emul
+;
+
+25 
+this
+->
+log
+ =Üog;
+
+26 
+this
+->
+∑r
+ = 
+∑øms
+;
+
+27 
+this
+->
+membîNode
+->
+addr
+ = *
+addªss
+;
+
+28 
+	}
+}
+
+33 
+	gMP1Node
+::~
+	$MP1Node
+(Ë{
+	}
+}
+
+41 
+MP1Node
+::
+	$ªcvLo›
+() {
+
+42 i‡–
+membîNode
+->
+bFaûed
+ ) {
+
+43  
+Ál£
+;
+
+46  
+emulNë
+->
+	`ENªcv
+(&(
+membîNode
+->
+addr
+), 
+íqueueWøµî
+, 
+NULL
+, 1, &(membîNode->
+mp1q
+));
+
+48 
+	}
+}
+
+55 
+	gMP1Node
+::
+	$íqueueWøµî
+(*
+ív
+, *
+buff
+, 
+size
+) {
+
+56 
+Queue
+ 
+q
+;
+
+57  
+q
+.
+	`íqueue
+((
+queue
+<
+q_ñt
+> *)
+ív
+, (*)
+buff
+, 
+size
+);
+
+58 
+	}
+}
+
+67 
+	gMP1Node
+::
+	$nodeSèπ
+(*
+£rvaddr°r
+, 
+£rvp‹t
+) {
+
+68 
+Addªss
+ 
+joöaddr
+;
+
+69 
+joöaddr
+ = 
+	`gëJoöAddªss
+();
+
+72 if–
+	`öôThisNode
+(&
+joöaddr
+) == -1 ) {
+
+73 #ifde‡
+DEBUGLOG
+
+
+74 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, "init_thisnode failed. Exit.");
+
+76 
+	`exô
+(1);
+
+79 if–!
+	`öåodu˚SñfToGroup
+(&
+joöaddr
+) ) {
+
+80 
+	`föishUpThisNode
+();
+
+81 #ifde‡
+DEBUGLOG
+
+
+82 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, "UnableÅo join selfÅo group. Exiting.");
+
+84 
+	`exô
+(1);
+
+88 
+	}
+}
+
+95 
+	gMP1Node
+::
+	$öôThisNode
+(
+Addªss
+ *
+joöaddr
+) {
+
+102 
+membîNode
+->
+bFaûed
+ = 
+Ál£
+;
+
+103 
+membîNode
+->
+öôed
+ = 
+åue
+;
+
+104 
+membîNode
+->
+öGroup
+ = 
+Ál£
+;
+
+106 
+membîNode
+->
+¬b
+ = 0;
+
+107 
+membîNode
+->
+hóπbót
+ = 0;
+
+108 
+membîNode
+->
+pögCou¡î
+ = 
+TFAIL
+;
+
+109 
+membîNode
+->
+timeOutCou¡î
+ = -1;
+
+110 
+	`öôMembîLi°TabÀ
+(
+membîNode
+);
+
+113 
+	}
+}
+
+120 
+	gMP1Node
+::
+	$öåodu˚SñfToGroup
+(
+Addªss
+ *
+joöaddr
+) {
+
+121 
+MesßgeHdr
+ *
+msg
+;
+
+122 #ifde‡
+DEBUGLOG
+
+
+123 
+s
+[1024];
+
+126 i‡–0 =
+	`memcmp
+((*)&(
+membîNode
+->
+addr
+.addr), (*)&(
+joöaddr
+->addr), (memberNode->addr.addr))) {
+
+128 #ifde‡
+DEBUGLOG
+
+
+129 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, "Starting up group...");
+
+131 
+membîNode
+->
+öGroup
+ = 
+åue
+;
+
+134 
+size_t
+ 
+msgsize
+ = (
+MesßgeHdr
+Ë+ (
+joöaddr
+->
+addr
+) + () + 1;
+
+135 
+msg
+ = (
+MesßgeHdr
+ *Ë
+	`mÆloc
+(
+msgsize
+ * ());
+
+138 
+msg
+->
+msgTy≥
+ = 
+JOINREQ
+;
+
+139 
+	`mem˝y
+((*)(
+msg
++1), &
+membîNode
+->
+addr
+.addr, (memberNode->addr.addr));
+
+140 
+	`mem˝y
+((*)(
+msg
++1Ë+ 1 + (
+membîNode
+->
+addr
+.addr), &membîNode->
+hóπbót
+, ());
+
+142 #ifde‡
+DEBUGLOG
+
+
+143 
+	`•rötf
+(
+s
+, "TryingÅo join...");
+
+144 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, 
+s
+);
+
+148 
+emulNë
+->
+	`EN£nd
+(&
+membîNode
+->
+addr
+, 
+joöaddr
+, (*)
+msg
+, 
+msgsize
+);
+
+150 
+	`‰ì
+(
+msg
+);
+
+155 
+	}
+}
+
+162 
+	gMP1Node
+::
+	$föishUpThisNode
+(){
+
+166 
+membîNode
+->
+bFaûed
+ = 
+åue
+;
+
+167 
+membîNode
+->
+öôed
+ = 
+Ál£
+;
+
+168 
+membîNode
+->
+öGroup
+ = 
+Ál£
+;
+
+170 
+membîNode
+->
+¬b
+ = -1;
+
+171 
+membîNode
+->
+hóπbót
+ = -1;
+
+172 
+membîNode
+->
+pögCou¡î
+ = 
+TFAIL
+;
+
+173 
+membîNode
+->
+timeOutCou¡î
+ = -1;
+
+176 
+	}
+}
+
+184 
+	gMP1Node
+::
+	$nodeLo›
+() {
+
+185 i‡(
+membîNode
+->
+bFaûed
+) {
+
+190 
+	`checkMesßges
+();
+
+193 if–!
+membîNode
+->
+öGroup
+ ) {
+
+198 
+	`nodeLo›Ops
+();
+
+201 
+	}
+}
+
+208 
+	gMP1Node
+::
+	$checkMesßges
+() {
+
+209 *
+±r
+;
+
+210 
+size
+;
+
+213  !
+membîNode
+->
+mp1q
+.
+	`em±y
+() ) {
+
+214 
+±r
+ = 
+membîNode
+->
+mp1q
+.
+	`‰⁄t
+().
+ñt
+;
+
+215 
+size
+ = 
+membîNode
+->
+mp1q
+.
+	`‰⁄t
+().size;
+
+216 
+membîNode
+->
+mp1q
+.
+	`p›
+();
+
+217 
+	`ªcvCÆlBack
+((*)
+membîNode
+, (*)
+±r
+, 
+size
+);
+
+220 
+	}
+}
+
+227 
+boﬁ
+ 
+	gMP1Node
+::
+	$ªcvCÆlBack
+(*
+ív
+, *
+d©a
+, 
+size
+ ) {
+
+231 
+Membî
+ *
+membî
+ = (Membî *)
+ív
+;
+
+232 
+MesßgeHdr
+ *
+msg
+ = (MesßgeHd∏*)
+d©a
+;
+
+233 
+MesßgeHdr
+ *
+s_msg
+;
+
+234 
+Addªss
+ *
+addr
+;
+
+235 
+id
+;
+
+236 
+p‹t
+;
+
+237 
+hb
+;
+
+238 #ifde‡
+DEBUGLOG
+
+
+239 
+s
+[1024];
+
+240 
+	`•rötf
+(
+s
+, "Recieved Call Back...");
+
+241 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, 
+s
+);
+
+243 
+	`¥ötf
+("---------------------------------------------------------------------\n");
+
+245 
+	`¥ötf
+("Address of MemberNode :");
+
+246 
+	`¥ötAddªss
+(&(
+membî
+->
+addr
+));
+
+248 
+addr
+ = (
+Addªss
+ *Ë(
+msg
+ + 1);
+
+249 
+	`¥ötAddªss
+(
+addr
+);
+
+251 
+id
+ = *(*Ë(&
+addr
+->addr);
+
+252 
+	`¥ötf
+("Addªs†<id> : %d \n", 
+id
+);
+
+254 
+p‹t
+ = *(*Ë(&
+addr
+->addr[4]);
+
+255 
+	`¥ötf
+("Addªs†<P‹t> : %hi\n", 
+p‹t
+);
+
+257 
+hb
+ = * (*Ë(
+addr
+ + 1) ;
+
+258 
+	`¥ötf
+("HórBóà: %ld \n", 
+hb
+);
+
+260 
+msg
+->
+msgTy≥
+) {
+
+261 
+JOINREQ
+ :
+
+263 
+	`¥ötf
+("Message Type : JOINREQ \n");
+
+264 
+size_t
+ 
+msgsize
+ = (
+MesßgeHdr
+Ë+ (
+Addªss
+) + () + 1;
+
+265 
+s_msg
+ = (
+MesßgeHdr
+ *Ë
+	`mÆloc
+(
+msgsize
+ * ());
+
+268 
+s_msg
+->
+msgTy≥
+ = 
+JOINREP
+;
+
+269 
+	`mem˝y
+((*)(
+s_msg
++1), &
+membîNode
+->
+addr
+.addr, (memberNode->addr.addr));
+
+270 
+	`mem˝y
+((*)(
+s_msg
++1Ë+ 1 + (
+membîNode
+->
+addr
+.addr), &membîNode->
+hóπbót
+, ());
+
+273 
+emulNë
+->
+	`EN£nd
+(&
+membîNode
+->
+addr
+,áddr, (*)
+s_msg
+, 
+msgsize
+);
+
+275 
+	`‰ì
+(
+msg
+);
+
+277 #ifde‡
+DEBUGLOG
+
+
+278 
+	`•rötf
+(
+s
+, "Re˚ived JOINREQ Mesßgê‰om id : %d", 
+id
+);
+
+279 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, 
+s
+);
+
+283 
+JOINREP
+ :
+
+285 
+	`¥ötf
+("Message Type : JOINREP \n");
+
+286 
+membîNode
+->
+öGroup
+ = 
+åue
+;
+
+288 #ifde‡
+DEBUGLOG
+
+
+289 
+	`•rötf
+(
+s
+, "Re˚ived JOINREP Mesßgê‰om id : %d", 
+id
+);
+
+290 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, 
+s
+);
+
+291 
+	`•rötf
+(
+s
+, "JoöedÅhêgrou∞%d", 
+id
+);
+
+292 
+log
+->
+	`LOG
+(&
+membîNode
+->
+addr
+, 
+s
+);
+
+297 
+	`¥ötf
+ ("Unknown message ");
+
+299 
+	`¥ötf
+("---------------------------------------------------------------------\n");
+
+301  
+åue
+;;
+
+302 
+	}
+}
+
+311 
+	gMP1Node
+::
+	$nodeLo›Ops
+() {
+
+318 
+	}
+}
+
+325 
+	gMP1Node
+::
+	$isNuŒAddªss
+(
+Addªss
+ *
+addr
+) {
+
+326  (
+	`memcmp
+(
+addr
+->addr, 
+NULLADDR
+, 6) == 0 ? 1 : 0);
+
+327 
+	}
+}
+
+334 
+Addªss
+ 
+	gMP1Node
+::
+	$gëJoöAddªss
+() {
+
+335 
+Addªss
+ 
+joöaddr
+;
+
+337 
+	`mem£t
+(&
+joöaddr
+, 0, (
+Addªss
+));
+
+338 *(*)(&
+joöaddr
+.
+addr
+) = 1;
+
+339 *(*)(&
+joöaddr
+.
+addr
+[4]) = 0;
+
+341  
+joöaddr
+;
+
+342 
+	}
+}
+
+349 
+	gMP1Node
+::
+	$öôMembîLi°TabÀ
+(
+Membî
+ *
+membîNode
+) {
+
+350 
+membîNode
+->
+membîLi°
+.
+	`˛ór
+();
+
+351 
+	}
+}
+
+358 
+	gMP1Node
+::
+	$¥ötAddªss
+(
+Addªss
+ *
+addr
+)
+
+360 
+	`¥ötf
+("%d.%d.%d.%d:%d \n", 
+addr
+->addr[0],addr->addr[1],addr->addr[2],
+
+361 
+addr
+->addr[3], *(*)&addr->addr[4]) ;
+
+362 
+	}
+}
+
+	@MP1Node.h
+
+8 #i‚de‡
+_MP1NODE_H_
+
+
+9 
+	#_MP1NODE_H_
+
+
+	)
+
+11 
+	~"°dö˛udes.h
+"
+
+12 
+	~"Log.h
+"
+
+13 
+	~"P¨ams.h
+"
+
+14 
+	~"Membî.h
+"
+
+15 
+	~"EmulNë.h
+"
+
+16 
+	~"Queue.h
+"
+
+21 
+	#TREMOVE
+ 20
+
+	)
+
+22 
+	#TFAIL
+ 5
+
+	)
+
+31 
+	eMsgTy≥s
+{
+
+32 
+	mJOINREQ
+,
+
+33 
+	mJOINREP
+,
+
+34 
+	mDUMMYLASTMSGTYPE
+
+
+42 
+	sMesßgeHdr
+ {
+
+43 
+MsgTy≥s
+ 
+	mmsgTy≥
+;
+
+44 }
+	tMesßgeHdr
+;
+
+51 ˛as†
+	cMP1Node
+ {
+
+52 
+	m¥iv©e
+:
+
+53 
+EmulNë
+ *
+emulNë
+;
+
+54 
+Log
+ *
+	mlog
+;
+
+55 
+P¨ams
+ *
+	m∑r
+;
+
+56 
+Membî
+ *
+	mmembîNode
+;
+
+57 
+	mNULLADDR
+[6];
+
+59 
+	mpublic
+:
+
+60 
+MP1Node
+(
+Membî
+ *, 
+P¨ams
+ *, 
+EmulNë
+ *, 
+Log
+ *, 
+Addªss
+ *);
+
+61 
+Membî
+ * 
+	$gëMembîNode
+() {
+
+62  
+membîNode
+;
+
+64 
+	`ªcvLo›
+();
+
+65 
+	`íqueueWøµî
+(*
+ív
+, *
+buff
+, 
+size
+);
+
+66 
+	`nodeSèπ
+(*
+£rvaddr°r
+, 
+£rvîp‹t
+);
+
+67 
+	`öôThisNode
+(
+Addªss
+ *
+joöaddr
+);
+
+68 
+	`öåodu˚SñfToGroup
+(
+Addªss
+ *
+joöAddªss
+);
+
+69 
+	`föishUpThisNode
+();
+
+70 
+	`nodeLo›
+();
+
+71 
+	`checkMesßges
+();
+
+72 
+boﬁ
+ 
+	`ªcvCÆlBack
+(*
+ív
+, *
+d©a
+, 
+size
+);
+
+73 
+	`nodeLo›Ops
+();
+
+74 
+	`isNuŒAddªss
+(
+Addªss
+ *
+addr
+);
+
+75 
+Addªss
+ 
+	`gëJoöAddªss
+();
+
+76 
+	`öôMembîLi°TabÀ
+(
+Membî
+ *
+membîNode
+);
+
+77 
+	`¥ötAddªss
+(
+Addªss
+ *
+addr
+);
+
+78 
+vútuÆ
+ ~
+	`MP1Node
+();
+
+79 
+	}
+};
+
+	@Member.cpp
+
+7 
+	~"Membî.h
+"
+
+12 
+	gq_ñt
+::
+	$q_ñt
+(*
+ñt
+, 
+size
+): 
+	`ñt
+”…), 
+	$size
+(
+size
+Ë{
+	}
+}
+
+17 
+	gAddªss
+::
+	$Addªss
+(c⁄° 
+Addªss
+ &
+™ŸhîAddªss
+) {
+
+19 
+	`mem˝y
+(&
+addr
+, &
+™ŸhîAddªss
+.addr, (addr));
+
+20 
+	}
+}
+
+25 
+	gAddªss
+& Addªss::
+›î©‹
+ =(c⁄° 
+Addªss
+& 
+™ŸhîAddªss
+) {
+
+27 
+mem˝y
+(&
+addr
+, &
+™ŸhîAddªss
+.addr, (addr));
+
+28  *
+	gthis
+;
+
+36 
+boﬁ
+ 
+	gAddªss
+::
+›î©‹
+ ==(c⁄° 
+Addªss
+& 
+™ŸhîAddªss
+) {
+
+37  !
+memcmp
+(
+this
+->
+addr
+, 
+™ŸhîAddªss
+.addr, (this->addr));
+
+43 
+	gMembîLi°E¡ry
+::
+	$MembîLi°E¡ry
+(
+id
+, 
+p‹t
+, 
+hóπbót
+, 
+time°amp
+): 
+	`id
+(id), 
+	`p‹t
+’‹t), 
+	`hóπbót
+(hóπbót), 
+	$time°amp
+(
+time°amp
+Ë{
+	}
+}
+
+48 
+	gMembîLi°E¡ry
+::
+	$MembîLi°E¡ry
+(
+id
+, 
+p‹t
+): 
+	`id
+(id), 
+	$p‹t
+(
+p‹t
+Ë{
+	}
+}
+
+53 
+	gMembîLi°E¡ry
+::
+	$MembîLi°E¡ry
+(c⁄° 
+MembîLi°E¡ry
+ &
+™ŸhîMLE
+) {
+
+54 
+this
+->
+hóπbót
+ = 
+™ŸhîMLE
+.heartbeat;
+
+55 
+this
+->
+id
+ = 
+™ŸhîMLE
+.id;
+
+56 
+this
+->
+p‹t
+ = 
+™ŸhîMLE
+.port;
+
+57 
+this
+->
+time°amp
+ = 
+™ŸhîMLE
+.timestamp;
+
+58 
+	}
+}
+
+63 
+	gMembîLi°E¡ry
+& MembîLi°E¡ry::
+›î©‹
+ =(c⁄° 
+MembîLi°E¡ry
+ &
+™ŸhîMLE
+) {
+
+64 
+MembîLi°E¡ry
+ 
+ãmp
+(
+™ŸhîMLE
+);
+
+65 
+sw≠
+(
+hóπbót
+, 
+ãmp
+.heartbeat);
+
+66 
+sw≠
+(
+id
+, 
+ãmp
+.id);
+
+67 
+sw≠
+(
+p‹t
+, 
+ãmp
+.port);
+
+68 
+sw≠
+(
+time°amp
+, 
+ãmp
+.timestamp);
+
+69  *
+	gthis
+;
+
+77 
+	gMembîLi°E¡ry
+::
+	$gëid
+() {
+
+78  
+id
+;
+
+79 
+	}
+}
+
+86 
+	gMembîLi°E¡ry
+::
+	$gëp‹t
+() {
+
+87  
+p‹t
+;
+
+88 
+	}
+}
+
+95 
+	gMembîLi°E¡ry
+::
+	$gëhóπbót
+() {
+
+96  
+hóπbót
+;
+
+97 
+	}
+}
+
+104 
+	gMembîLi°E¡ry
+::
+	$gëtime°amp
+() {
+
+105  
+time°amp
+;
+
+106 
+	}
+}
+
+113 
+	gMembîLi°E¡ry
+::
+	$£tid
+(
+id
+) {
+
+114 
+this
+->
+id
+ = id;
+
+115 
+	}
+}
+
+122 
+	gMembîLi°E¡ry
+::
+	$£ç‹t
+(
+p‹t
+) {
+
+123 
+this
+->
+p‹t
+ =Öort;
+
+124 
+	}
+}
+
+131 
+	gMembîLi°E¡ry
+::
+	$£thóπbót
+(
+hórbót
+) {
+
+132 
+this
+->
+hóπbót
+ = 
+hórbót
+;
+
+133 
+	}
+}
+
+140 
+	gMembîLi°E¡ry
+::
+	$£âime°amp
+(
+time°amp
+) {
+
+141 
+this
+->
+time°amp
+ =Åimestamp;
+
+142 
+	}
+}
+
+147 
+	gMembî
+::
+	$Membî
+(c⁄° 
+Membî
+ &
+™ŸhîMembî
+) {
+
+148 
+this
+->
+addr
+ = 
+™ŸhîMembî
+.addr;
+
+149 
+this
+->
+öôed
+ = 
+™ŸhîMembî
+.inited;
+
+150 
+this
+->
+öGroup
+ = 
+™ŸhîMembî
+.inGroup;
+
+151 
+this
+->
+bFaûed
+ = 
+™ŸhîMembî
+.bFailed;
+
+152 
+this
+->
+¬b
+ = 
+™ŸhîMembî
+.nnb;
+
+153 
+this
+->
+hóπbót
+ = 
+™ŸhîMembî
+.heartbeat;
+
+154 
+this
+->
+pögCou¡î
+ = 
+™ŸhîMembî
+.pingCounter;
+
+155 
+this
+->
+timeOutCou¡î
+ = 
+™ŸhîMembî
+.timeOutCounter;
+
+156 
+this
+->
+membîLi°
+ = 
+™ŸhîMembî
+.memberList;
+
+157 
+this
+->
+myPos
+ = 
+™ŸhîMembî
+.myPos;
+
+158 
+this
+->
+mp1q
+ = 
+™ŸhîMembî
+.mp1q;
+
+159 
+	}
+}
+
+164 
+	gMembî
+& Membî::
+›î©‹
+ =(c⁄° 
+Membî
+& 
+™ŸhîMembî
+) {
+
+165 
+this
+->
+addr
+ = 
+™ŸhîMembî
+.addr;
+
+166 
+	gthis
+->
+	göôed
+ = 
+™ŸhîMembî
+.
+öôed
+;
+
+167 
+	gthis
+->
+	göGroup
+ = 
+™ŸhîMembî
+.
+öGroup
+;
+
+168 
+	gthis
+->
+	gbFaûed
+ = 
+™ŸhîMembî
+.
+bFaûed
+;
+
+169 
+	gthis
+->
+	g¬b
+ = 
+™ŸhîMembî
+.
+¬b
+;
+
+170 
+	gthis
+->
+	ghóπbót
+ = 
+™ŸhîMembî
+.
+hóπbót
+;
+
+171 
+	gthis
+->
+	gpögCou¡î
+ = 
+™ŸhîMembî
+.
+pögCou¡î
+;
+
+172 
+	gthis
+->
+	gtimeOutCou¡î
+ = 
+™ŸhîMembî
+.
+timeOutCou¡î
+;
+
+173 
+	gthis
+->
+	gmembîLi°
+ = 
+™ŸhîMembî
+.
+membîLi°
+;
+
+174 
+	gthis
+->
+	gmyPos
+ = 
+™ŸhîMembî
+.
+myPos
+;
+
+175 
+	gthis
+->
+	gmp1q
+ = 
+™ŸhîMembî
+.
+mp1q
+;
+
+176  *
+	gthis
+;
+
+	@Member.h
+
+7 #i‚de‡
+MEMBER_H_
+
+
+8 
+	#MEMBER_H_
+
+
+	)
+
+10 
+	~"°dö˛udes.h
+"
+
+17 ˛as†
+	cq_ñt
+ {
+
+18 
+	mpublic
+:
+
+19 *
+ñt
+;
+
+20 
+	msize
+;
+
+21 
+q_ñt
+(*
+ñt
+, 
+size
+);
+
+29 ˛as†
+	cAddªss
+ {
+
+30 
+	mpublic
+:
+
+31 
+addr
+[6];
+
+32 
+	$Addªss
+() {}
+
+34 
+	`Addªss
+(c⁄° 
+Addªss
+ &
+™ŸhîAddªss
+);
+
+36 
+Addªss
+& 
+›î©‹
+ =(c⁄° Addªs†&
+™ŸhîAddªss
+);
+
+37 
+boﬁ
+ 
+›î©‹
+ ==(c⁄° 
+Addªss
+ &
+™ŸhîAddªss
+);
+
+38 
+	$Addªss
+(
+°rög
+ 
+addªss
+) {
+
+39 
+size_t
+ 
+pos
+ = 
+addªss
+.
+	`föd
+(":");
+
+40 
+id
+ = 
+	`°oi
+(
+addªss
+.
+	`sub°r
+(0, 
+pos
+));
+
+41 
+p‹t
+ = ()
+	`°oi
+(
+addªss
+.
+	`sub°r
+(
+pos
+ + 1,áddªss.
+	`size
+()-pos-1));
+
+42 
+	`mem˝y
+(&
+addr
+[0], &
+id
+, ());
+
+43 
+	`mem˝y
+(&
+addr
+[4], &
+p‹t
+, ());
+
+44 
+	}
+}
+
+45 
+°rög
+ 
+	$gëAddªss
+() {
+
+46 
+id
+ = 0;
+
+47 
+p‹t
+;
+
+48 
+	`mem˝y
+(&
+id
+, &
+addr
+[0], ());
+
+49 
+	`mem˝y
+(&
+p‹t
+, &
+addr
+[4], ());
+
+50  
+	`to_°rög
+(
+id
+Ë+ ":" +Åo_°rög(
+p‹t
+);
+
+51 
+	}
+}
+
+52 
+	$öô
+() {
+
+53 
+	`mem£t
+(&
+addr
+, 0, (addr));
+
+54 
+	}
+}
+
+62 ˛as†
+	cMembîLi°E¡ry
+ {
+
+63 
+	mpublic
+:
+
+64 
+id
+;
+
+65 
+	mp‹t
+;
+
+66 
+	mhóπbót
+;
+
+67 
+	mtime°amp
+;
+
+68 
+MembîLi°E¡ry
+(
+id
+, 
+p‹t
+, 
+hóπbót
+, 
+time°amp
+);
+
+69 
+MembîLi°E¡ry
+(
+id
+, 
+p‹t
+);
+
+70 
+	$MembîLi°E¡ry
+(): 
+	`id
+(0), 
+	`p‹t
+(0), 
+	`hóπbót
+(0), 
+	$time°amp
+(0) {}
+
+71 
+	`MembîLi°E¡ry
+(c⁄° 
+MembîLi°E¡ry
+ &
+™ŸhîMLE
+);
+
+72 
+MembîLi°E¡ry
+& 
+›î©‹
+ =(c⁄° MembîLi°E¡ry &
+™ŸhîMLE
+);
+
+73 
+	`gëid
+();
+
+74 
+	`gëp‹t
+();
+
+75 
+	`gëhóπbót
+();
+
+76 
+	`gëtime°amp
+();
+
+77 
+	`£tid
+(
+id
+);
+
+78 
+	`£ç‹t
+(
+p‹t
+);
+
+79 
+	`£thóπbót
+(
+hórbót
+);
+
+80 
+	`£âime°amp
+(
+time°amp
+);
+
+81 
+	}
+};
+
+89 ˛as†
+	cMembî
+ {
+
+90 
+	mpublic
+:
+
+92 
+Addªss
+ 
+addr
+;
+
+94 
+boﬁ
+ 
+	möôed
+;
+
+96 
+boﬁ
+ 
+	möGroup
+;
+
+98 
+boﬁ
+ 
+	mbFaûed
+;
+
+100 
+	m¬b
+;
+
+102 
+	mhóπbót
+;
+
+104 
+	mpögCou¡î
+;
+
+106 
+	mtimeOutCou¡î
+;
+
+108 
+	mve˘‹
+<
+	mMembîLi°E¡ry
+> 
+	mmembîLi°
+;
+
+110 
+	mve˘‹
+<
+	mMembîLi°E¡ry
+>::
+ôî©‹
+ 
+myPos
+;
+
+112 
+	mqueue
+<
+	mq_ñt
+> 
+	mmp1q
+;
+
+116 
+	$Membî
+(): 
+	`öôed
+(
+Ál£
+), 
+	`öGroup
+(Ál£), 
+	`bFaûed
+(Ál£), 
+	`¬b
+(0), 
+	`hóπbót
+(0), 
+	`pögCou¡î
+(0), 
+	$timeOutCou¡î
+(0) {}
+
+118 
+	`Membî
+(c⁄° 
+Membî
+ &
+™ŸhîMembî
+);
+
+120 
+Membî
+& 
+›î©‹
+ =(c⁄° Membî &
+™ŸhîMembî
+);
+
+121 
+vútuÆ
+ ~
+	$Membî
+(Ë{
+	}
+}
+
+	@Params.cpp
+
+7 
+	~"P¨ams.h
+"
+
+12 
+	gP¨ams
+::
+	$P¨ams
+(): 
+	$PORTNUM
+(8001Ë{
+	}
+}
+
+19 
+P¨ams
+::
+	$£ç¨ams
+(*
+c⁄fig_fûe
+) {
+
+20 
+FILE
+ *
+Â
+ = 
+	`f›í
+(
+c⁄fig_fûe
+,"r");
+
+22 
+	`fsˇnf
+(
+Â
+,"MAX_NNB: %d", &
+MAX_NNB
+);
+
+23 
+	`fsˇnf
+(
+Â
+,"\nSINGLE_FAILURE: %d", &
+SINGLE_FAILURE
+);
+
+24 
+	`fsˇnf
+(
+Â
+,"\nDROP_MSG: %d", &
+DROP_MSG
+);
+
+25 
+	`fsˇnf
+(
+Â
+,"\nMSG_DROP_PROB: %lf", &
+MSG_DROP_PROB
+);
+
+29 
+EN_GPSZ
+ = 
+MAX_NNB
+;
+
+30 
+STEP_RATE
+=.25;
+
+31 
+MAX_MSG_SIZE
+ = 4000;
+
+32 
+globÆtime
+ = 0;
+
+33 
+dr›msg
+ = 0;
+
+34 
+ÆlNodesJoöed
+ = 0;
+
+35  
+i
+ = 0; i < 
+EN_GPSZ
+; i++ ) {
+
+36 
+ÆlNodesJoöed
+ +
+i
+;
+
+38 
+	`f˛o£
+(
+Â
+);
+
+40 
+	}
+}
+
+48 
+	gP¨ams
+::
+	$gëcuºtime
+(){
+
+49  
+globÆtime
+;
+
+50 
+	}
+}
+
+	@Params.h
+
+7 #i‚de‡
+_PARAMS_H_
+
+
+8 
+	#_PARAMS_H_
+
+
+	)
+
+10 
+	~"°dö˛udes.h
+"
+
+11 
+	~"P¨ams.h
+"
+
+12 
+	~"Membî.h
+"
+
+14 
+	eã°TYPE
+ { 
+	mCREATE_TEST
+, 
+	mREAD_TEST
+, 
+	mUPDATE_TEST
+, 
+	mDELETE_TEST
+ };
+
+21 ˛as†
+	cP¨ams
+{
+
+22 
+	mpublic
+:
+
+23 
+MAX_NNB
+;
+
+24 
+	mSINGLE_FAILURE
+;
+
+25 
+	mMSG_DROP_PROB
+;
+
+26 
+	mSTEP_RATE
+;
+
+27 
+	mEN_GPSZ
+;
+
+28 
+	mMAX_MSG_SIZE
+;
+
+29 
+	mDROP_MSG
+;
+
+30 
+	mdr›msg
+;
+
+31 
+	mglobÆtime
+;
+
+32 
+	mÆlNodesJoöed
+;
+
+33 
+	mPORTNUM
+;
+
+34 
+P¨ams
+();
+
+35 
+£ç¨ams
+(*);
+
+36 
+gëcuºtime
+();
+
+	@Queue.h
+
+7 #i‚de‡
+QUEUE_H_
+
+
+8 
+	#QUEUE_H_
+
+
+	)
+
+10 
+	~"°dö˛udes.h
+"
+
+11 
+	~"Membî.h
+"
+
+18 ˛as†
+	cQueue
+ {
+
+19 
+	mpublic
+:
+
+20 
+	$Queue
+() {}
+
+21 
+vútuÆ
+ ~
+	$Queue
+(Ë{
+	}
+}
+
+22 
+boﬁ
+ 
+íqueue
+(
+queue
+<
+q_ñt
+> *queue, *
+buf„r
+, 
+size
+) {
+
+23 
+q_ñt
+ 
+ñemít
+(
+buf„r
+, 
+size
+);
+
+24 
+	gqueue
+->
+em∂a˚
+(
+ñemít
+);
+
+25  
+	gåue
+;
+
+	@stdincludes.h
+
+7 #i‚de‡
+_STDINCLUDES_H_
+
+
+8 
+	#_STDINCLUDES_H_
+
+
+	)
+
+13 
+	#RING_SIZE
+ 512
+
+	)
+
+14 
+	#FAILURE
+ -1
+
+	)
+
+15 
+	#SUCCESS
+ 0
+
+	)
+
+20 
+	~<°dio.h
+>
+
+21 
+	~<m©h.h
+>
+
+22 
+	~<°rög.h
+>
+
+23 
+	~<°dlib.h
+>
+
+24 
+	~<as£π.h
+>
+
+25 
+	~<time.h
+>
+
+26 
+	~<°d¨g.h
+>
+
+27 
+	~<uni°d.h
+>
+
+28 
+	~<f˙é.h
+>
+
+29 
+	~<execöfo.h
+>
+
+30 
+	~<sig«l.h
+>
+
+31 
+	~<io°ªam
+>
+
+32 
+	~<ve˘‹
+>
+
+33 
+	~<m≠
+>
+
+34 
+	~<°rög
+>
+
+35 
+	~<Æg‹ôhm
+>
+
+36 
+	~<queue
+>
+
+37 
+	~<f°ªam
+>
+
+39 
+usög
+ 
+«me•a˚
+ 
+	g°d
+;
+
+41 
+	#STDCLLBKARGS
+ (*
+ív
+, *
+d©a
+, 
+size
+)
+
+	)
+
+42 
+	#STDCLLBKRET
+ 
+
+	)
+
+43 
+	#DEBUGLOG
+ 1
+
+	)
+
+	@
+1
+.
+0
+14
+150
+Application.cpp
+Application.h
+EmulNet.cpp
+EmulNet.h
+Log.cpp
+Log.h
+MP1Node.cpp
+MP1Node.h
+Member.cpp
+Member.h
+Params.cpp
+Params.h
+Queue.h
+stdincludes.h

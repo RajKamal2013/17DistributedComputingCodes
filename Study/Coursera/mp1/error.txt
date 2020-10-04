@@ -1,0 +1,5 @@
+MP1Node.cpp:492:25: error: use of undeclared identifier 'heartbeat'
+    member->heartbeat = heartbeat;
+                        ^
+1 error generated.
+make: *** [MP1Node.o] Error 1

@@ -1,0 +1,323 @@
+vim run.sh 
+run.sh
+./run.sh 
+ls
+clear
+function fish_prompt
+     set -l textcol  white
+     set -l arrowcol green
+     set_color $textcol -b $bgcol
+     echo -n "~ "
+     set_color $arrowcol -b normal
+     echo -n " "
+ end
+vim Grader.sh 
+./Grader.sh 
+gcc --version
+python submit.py 
+chmod +x Grader.sh 
+make
+./Application testcases/multifailure.conf 
+vim MP1Node.cpp 
+vim MP1Node.debug.cpp 
+mv MP1Node.cpp.debug MP1Node.debug.cpp 
+vim MP1Node.cpp.debug  
+cp MP1Node.cpp MP1Node.cpp.debug 
+ls
+cd Documents/work/CloudComputing/Coursera/mp1/
+./Application testcases/msgdropsinglefailure.conf 
+./Application testcases/singlefailure.conf  
+./Application testcases/singlefailure.conf  > t.txt 
+vim t.txt 
+make clean
+make 
+whoami 
+who 
+mak
+./Application testcases/singlefailure.conf > t.txt
+make clea
+:q
+vim dbg.log 
+./Application testcases/singlefailure.conf 
+vim Member.h
+ks
+./Application testcases/singlefailure.conf
+vim error.txt 
+make 2> error.txt
+:q!
+make > error.txt
+vim MP1Node.h
+cscope -Rvkq
+git push 
+tail -f dbg.log 
+history 
+s
+cd -
+cat .fishrc 
+cd ~
+git branch 
+git merge master 
+git checkout draft1
+git checkout master
+git diff
+git config --global credential.helper osxkeychain
+git config --global credential.helper
+git credential-osxkeychain set
+git credential-osxkeychain zet
+git config credential.https://github.com.username rajkamal2013
+git credential-osxkeychain erase
+git commit -m "JOINREP Working "
+git merge draft1
+git merget draft1
+git checkout master 
+git config --global credential.helper store --file ~/.my-credentials
+git config (--global) user.name
+git credential-osxkeychain
+git push origin master 
+git credential-osxkeychain store
+git-credential-osxkeychain
+git status
+git log 
+git commit -a "JOINREP Working "
+vim MP1Node.j
+vim Member.cpp 
+pwd
+fish 
+exit
+vim ~/.bash_profile 
+vim ~/.bashrc
+vim ~/.fishrc
+zsh
+vim Member.H
+function fish_prompt
+    set -l textcol  white
+    set -l arrowcol green
+    set_color $textcol -b $bgcol
+    echo -n "~ "
+    set_color $arrowcol -b normal
+    echo -n " "
+end
+vim stdincludes.h 
+vim Log.h
+vim Log.cpp 
+l
+function fish_prompt
+           set -l textcol  white
+           set -l arrowcol green
+           set_color $textcol -b $bgcol
+           echo -n "~ "
+           set_color $arrowcol -b normal
+           echo -n " "
+   end
+cat ~/.config/fish/config.fish
+vim ~/.fi
+vim 
+sudo su 
+ping 4.4.4.4
+clock
+time
+cd /Users/rajkamal/
+vim ~/.bash
+vim ~/.zshrc
+exi
+mysql -u root
+sudo /usr/local/mysql/support-files/mysql.server stop
+source ~/.profile
+echo 'export PATH="$PATH:/usr/local/mysql/bin"' >> ~/.profile
+mysql -u root -p mysql
+sudo mysqld_safe --skip-grant-tables
+export PATH="$PATH:/usr/local/mysql/bin"
+brew update
+npm -v
+tar -zvxf mongodb-osx-x86_64-3.4.2.tgz 
+curl -O https://fastdl.mongodb.org/osx/mongodb-osx-x86_64-3.4.2.tgz
+scp webserver.c raj@192.168.0.100:/home/
+vim regex.c
+cd ..
+cd Preferences/
+cd Logs/
+cd Containers/
+cd Oracle/
+cd Application\ Support/
+cd ~/Library/
+cd Scripts/
+cd Security/
+cd Spotlight/
+cd Library/
+rm -rf comp.text.tex.distribution.Helper.plist 
+cd ../LaunchDaemons/
+cd LaunchAgents/
+ cd ..
+rm -rf VirusScanPreferences.framework/
+rm -rf Tcl.framework/ Tk.framework/ NyxAudioAnalysis.framework
+cd Frameworks/
+cd DirectoryServices/
+cd Developer/
+rm -rf VMware/
+cd VMware/
+cd Google/
+rm -rf Google/
+rm -rf VMware\ Fusion/
+rm -rf Nik\ Collection.plist 
+rm -rf Tcl/ TeX/
+cd Developer/CommandLineTools/usr/share/man/whatis 
+cd Components/
+cd ProApps/
+cd Java/
+cd /Library/Application\ Support/
+ls -al | grep mc
+ls -al
+ls | grep mc
+ls | grep mcaf
+cd /System/Library/Extensions/
+rm -rf com.oracle.javadeployment.plist
+ls | grep mca
+cd Application\ Scripts/
+cd .
+rm -rf Oracle/
+vim StartupParameters.plist 
+cd HWNetMgr/
+cd StartupItems/
+cd PreferencePanes/
+rm -rf com.cisco.anyconnect.vpnagentd.plist com.mcafee.* com.oracle.*
+cd LaunchDaemons/
+rm -rf com.oracle.java.Helper-Tool.plist
+rm -rf com.mcafee.ssm.antimalware.plist
+cd ../Preferences
+cd ../Preference
+cd NoMachine/
+rm -rf com.cisco.anyconnect.gui.plist
+rm -rf com.oracle.java.Java-Updater.plist
+rm -rf com.oracle.mydesktophelper.plist
+rm -rf com.mcafee.reporter.plist
+rm -rf com.mcafee.menulet.plist
+rm -rf McAfee/
+sl
+cd Logging/
+rm .com.mcafee.antimalware.license
+cd Products/
+cd Applications/
+cd MSS/
+uninstallMSS
+cd McAfee/
+cd global/
+cd unlicensed/
+cd MyDesktopHolding/
+cd MyDesktop
+cd /Library/
+./uninstallMSC
+./uninstall fmp
+./uninstall AntiMalware
+./uninstall MSCUI
+./uninstallMSCUI
+./uninstall 
+uninstall
+UninstallCleanUp
+./UninstallCleanUp 
+cd /usr/local/McAfee/
+/usr/local/McAfee/uninstallMSC
+ sudo /Library/McAfee/cma/uninstall.sh
+man mysql
+mysql -u root -p
+mysql 
+mysql -u root -p johnsnow
+echo $PATH
+ps -elf | grep mysql
+kill -9 94753
+kill -9 94673
+sudo service mysql stop
+./mysql -u root
+cd /usr/local/mysql/bin/
+mysql -uroot 
+mysql -u root 
+mysql -u root -p 
+mysql -u root -P 3306
+netstat -an
+lsof -nP | grep TCP
+/usr/sbin/lsof -nP | grep TCP
+/usr/bin/lsof -nP | grep TCP
+lsof -np | grep TCP
+man netstat
+netstat -an 
+lsof -i 4tcp:3036 -sTCP:LISTEN
+lsof -i 4tcp:8080 -sTCP:LISTEN
+netstat -an|more
+sudo ipfw list
+lsof -i | grep LISTEN
+cd /System/Library/CoreServices/Applications/
+cd /System/Library/CoreServices/Applications/Network Utility.app
+lsof -Pn -i4
+netstat -ap tcp
+vim /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist
+ps -ax | grep mysql
+ps -elf
+netstat -r | grep mysql
+netstat  | grep mysql
+netstat -tlp | grep mysql
+netstat -tlpn | grep mysql
+netstat -rn | grep mysql
+netstat -rn
+kill -9  49988
+kill -9  4998
+kill -9  46036
+/usr/local/mysql/bin/mysqld start
+mysql.server start
+/usr/local/mysql/bin/mysql
+mysql
+/usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysqld start
+sudo /usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysqld start
+sudo /usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysqld --skip-grant-tables
+/usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysqld --skip-grant-tables
+/usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysqld stop
+/usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysql -uroot -hlocalhost -pCfDuWf?&49Z
+/usr/local/mysql/bin/mysql -uroot -hlocalhost -pCfDuWf?&49Z
+sudo su
+ping 10.184.5.64
+sudo launchctl kickstart -k system/com.apple.networking.discoveryd
+nslookup www.apple.com 8.8.8.8
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+sbt console
+scala
+activator
+source ~/.bash_profile 
+vim ~/.bash_profile
+cd activator/
+cd /usr/local/share/
+cp -r /Users/rajkamal/Downloads/activator-dist-1.3.7/ /usr/local/share/activator/
+mkdir activator
+rm -rf LICENSE.html README.html activator* bin/ lib/ templates/ repository/
+mkdir activator 
+cp -r /Users/rajkamal/Downloads/activator-dist-1.3.7/ .
+rm -rf activator* bin/ repository/ templates/ lib/ LICENSE.html  README.html 
+cd activator
+mv activator-launch-1.3.7.jar activator
+cp -r Downloads/activator-dist-1.3.7/ /usr/local/share/
+cd Users/rajkamal/
+cd /
+cd /home/
+sbt version 
+-sbt-version 
+sbt --h
+sbt -h
+sbt --version
+scala --version
+brew install sbt
+java -version
+java-version
+/usr/sbin/system_profiler SPHardwareDataType
+system_profiler | grep Processor
+system_profiler
+cpuinfo
+man objdump
+ssh rajkamal@scapen-cs12-2.us.oracle.com
+nmap -A localhost
+nmap localhost
+nmap -sT -o -v localhost
+nmap -o localhost
+nmap -o -v localhost
+man nmap
+nmap -sT -O localhost
+lsof | grep TCP
+lsof | grep 834
+lsof
